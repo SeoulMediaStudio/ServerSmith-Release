@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 A small update that adds a Reset token option.
 
 ### Added
--Setup → Reset token… removes the saved bot token from your PC (a clean
+- Setup → Reset token… removes the saved bot token from your PC (a clean
   "sign out"). Useful when switching bots or before handing the computer to
   someone else. Your token lives in the Windows Credential Manager, so this is the
   supported way to clear it.
