@@ -4,6 +4,8 @@
 
 <p align="center"><a href="README.md">English</a> · <strong>Deutsch</strong></p>
 
+Discord: https://discord.gg/sd5MurR2fu
+
 ServerSmith ist eine Windows-Desktop-App, mit der <em>jede*r</em> einen vollständig
 konfigurierten Discord-Server gestalten und erstellen kann — Rollen, Kategorien,
 Kanäle, Berechtigungen, Foren und Onboarding — auf Knopfdruck. Kein Terminal, keine
