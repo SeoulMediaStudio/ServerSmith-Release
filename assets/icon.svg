@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><defs>
+    <linearGradient id="i_bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C83F2"/>
+      <stop offset="1" stop-color="#7A3FDD"/>
+    </linearGradient>
+    <linearGradient id="i_metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E6E9F3"/>
+    </linearGradient>
+    <linearGradient id="i_spk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD15C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="256" height="256" rx="60" fill="url(#i_bg)"/>
+    <!-- anvil -->
+    <g>
+      <!-- foot -->
+      <rect x="84" y="178" width="88" height="20" rx="8" fill="url(#i_metal)"/>
+      <!-- neck -->
+      <path d="M108 140 L148 140 L142 178 L114 178 Z" fill="url(#i_metal)"/>
+      <!-- face / body bar with small horn on the left -->
+      <path d="M58 116
+               Q54 116 54 121
+               L54 121
+               Q54 131 64 131
+               L188 131
+               Q200 131 200 119
+               L200 110
+               Q200 104 192 104
+               L70 104
+               Q58 104 58 116 Z" fill="url(#i_metal)"/>
+      <!-- divider lines -->
+      <rect x="84" y="178" width="88" height="3" fill="#C9CEE0" opacity="0.55"/>
+      <rect x="108" y="140" width="40" height="3" fill="#C9CEE0" opacity="0.45"/>
+    </g>
+    <!-- pencil lying across the face, tip to the lower-left -->
+    <g transform="rotate(-11 128 100)">
+      <rect x="76" y="92" width="106" height="21" rx="10.5" fill="url(#i_metal)"/>
+      <!-- graphite tip -->
+      <path d="M77 93 L60 102.5 L77 112 Z" fill="url(#i_metal)"/>
+      <path d="M68 98 L60 102.5 L68 107 Z" fill="#3A3F55"/>
+      <!-- ferrule band -->
+      <rect x="168" y="92" width="4" height="21" fill="#C9CEE0" opacity="0.6"/>
+    </g>
+    <!-- sparkle, top-right -->
+    <path d="M196 70
+             C198 84 200 86 214 88
+             C200 90 198 92 196 106
+             C194 92 192 90 178 88
+             C192 86 194 84 196 70 Z" fill="url(#i_spk)"/>
+    </svg>

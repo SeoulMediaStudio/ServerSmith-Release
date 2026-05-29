@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a problem with ServerSmith
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please fill in the
+        details below so we can reproduce and fix it quickly.
+  - type: input
+    id: version
+    attributes:
+      label: ServerSmith version
+      description: See **Help → About** in the app.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open '...'
+        2. Click '...'
+        3. See the problem
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Build log or message
+      description: >
+        If the problem happened during a build, click **Copy log** in the build
+        dialog and paste it here. Remove anything you consider sensitive.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional — drag and drop images here.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I'm using the latest version of ServerSmith.
+          required: true
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
