@@ -2,6 +2,8 @@
   <img src="assets/serversmith_logo.svg" alt="ServerSmith — Forge your server in one click." width="560">
 </p>
 
+<p align="center"><strong>English</strong> · <a href="README.de.md">Deutsch</a></p>
+
 ServerSmith is a Windows desktop app that lets <em>anyone</em> design and create a
 fully configured Discord server — roles, categories, channels, permissions,
 forums, and onboarding — at the press of a button. No terminal, no PowerShell,
