@@ -5,6 +5,18 @@ All notable changes to ServerSmith are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-05-29
+
+A small update that adds a Reset token option.
+
+### Added
+-Setup → Reset token… removes the saved bot token from your PC (a clean
+  "sign out"). Useful when switching bots or before handing the computer to
+  someone else. Your token lives in the Windows Credential Manager, so this is the
+  supported way to clear it.
+
+  [0.1.1]: https://github.com/SeoulMediaStudio/ServerSmith-Release/releases/tag/v0.1.1
+
 ## [0.1.0] - 2026-05-29
 
 First public release.
