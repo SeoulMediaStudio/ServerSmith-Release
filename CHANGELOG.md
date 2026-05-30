@@ -5,28 +5,44 @@ All notable changes to ServerSmith are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-05-30
+
+### Fixed
+- After installing an update, ServerSmith no longer fails to start the first time
+  with a "Failed to load Python DLL" error (you previously had to launch it again).
+  The app is now packaged so its files sit next to the program instead of being
+  unpacked to a temporary folder on every launch — which Windows' virus scanner
+  could briefly block right after an update.
+
 ## [0.1.2] - 2026-05-30
 
 ### Added
-A formatting toolbar above the Seed and forum First-post text boxes: one-click Bold, Italic, Underline, Strikethrough, Spoiler, inline code, code block, quote and heading. Two pickers — # Channel and @ Role — insert a link to any channel or a mention of any role from your template, so you never have to remember Discord's formatting syntax. Anything you type by hand still works.
-Role mentions in starter content: a role you reference is turned into a real @role mention when the server is built (channel links already worked). This now also applies to a forum's first post.
-Onboarding editor: an Import… button loads a standalone onboarding file (sitting next to a server template) directly into the editor.
+- A formatting toolbar above the Seed and forum First-post text boxes:
+  one-click Bold, Italic, Underline, Strikethrough, Spoiler, inline code, code
+  block, quote and heading. Two pickers — **# Channel** and **@ Role** — insert a
+  link to any channel or a mention of any role from your template, so you never
+  have to remember Discord's formatting syntax. Anything you type by hand still
+  works.
+- Role mentions in starter content: a role you reference is turned into a real
+  @role mention when the server is built (channel links already worked). This now
+  also applies to a forum's first post.
+- Onboarding editor: an **Import…** button loads a standalone onboarding file
+  (sitting next to a server template) directly into the editor.
+
+### Fixed
+- Importing a server template now automatically attaches its matching onboarding
+  file when one sits beside it — previously that companion file was silently
+  skipped, so onboarding had to be added by hand.
 
 ## [0.1.1] - 2026-05-29
 
-A small update that adds a Reset token option.
-
 ### Added
-- Setup → Reset token… removes the saved bot token from your PC (a clean
-  "sign out"). Useful when switching bots or before handing the computer to
-  someone else. Your token lives in the Windows Credential Manager, so this is the
-  supported way to clear it.
-
-  [0.1.1]: https://github.com/SeoulMediaStudio/ServerSmith-Release/releases/tag/v0.1.1
+- **Reset token** — a new option under **Setup → Reset token…** removes the saved
+  bot token from your PC (a clean "sign out"). Handy when switching bots or before
+  handing the computer to someone else. Your token is stored in the Windows
+  Credential Manager, so this is the supported way to clear it.
 
 ## [0.1.0] - 2026-05-29
-
-First public release.
 
 ### Added
 - One-click building of a fully configured Discord server: roles, categories,
@@ -52,4 +68,7 @@ First public release.
 - Built-in update checking with one-click install that preserves your data.
 - English and German interface.
 
+[0.1.3]: https://github.com/SeoulMediaStudio/ServerSmith-Release/releases/tag/v0.1.3
+[0.1.2]: https://github.com/SeoulMediaStudio/ServerSmith-Release/releases/tag/v0.1.2
+[0.1.1]: https://github.com/SeoulMediaStudio/ServerSmith-Release/releases/tag/v0.1.1
 [0.1.0]: https://github.com/SeoulMediaStudio/ServerSmith-Release/releases/tag/v0.1.0
